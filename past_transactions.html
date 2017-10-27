@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Gridy Marketplace</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+<style type="text/css">
+	body { background: #ebfafa !important; }
+</style>
+
+    <div class="container">
+        <div class='jumbotron' style='background-color:#b3e0ff'>
+            <h2>Gridy Marketplace</h2>
+        </div>
+
+    </div>
+
+    <div class='container' style=background-color:#ffffff'>
+
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Live Market</a></li> 
+							<li class="active"><a href="#">Past Transactions</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+      </nav>
+
+      <div class="row">
+				<div class="col-sm-12">
+					
+
+					<table class="table table-striped" style='background-color:#ffffff'>
+    				<thead>
+      				<tr>
+        				<th>Offer ID</th>
+        				<th>Power (kWH)</th>
+        				<th>Price (EUR)</th>
+								<th>Date</th>
+      				</tr>
+    				</thead>
+    				<tbody>
+
+					<! This is the dynamic part that the program writes in the file ->
+				  <! INSERT_TAG -> 
+
+<tr>
+    <td>1007</td>
+    <td>32</td>
+    <td>4.80</td>
+    <td>2017-10-25</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1007">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1007" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1007</td>
+                                    <td>32</td>
+				    <td>4.80</td>
+				    <td>2017-10-25</td>
+				    <td>Graikos Alex</td>
+				    <td>Oxi Avenue 12</td>
+				    <td>Adalakis Lefteris
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1008</td>
+    <td>45</td>
+    <td>6.75</td>
+    <td>2017-10-25</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1008">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1008" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1008</td>
+                                    <td>45</td>
+				    <td>6.75</td>
+				    <td>2017-10-25</td>
+				    <td>Keramaris Kostas</td>
+				    <td>Nikolaou Manmou 25</td>
+				    <td>Dellios Giannis
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1009</td>
+    <td>12</td>
+    <td>1.79</td>
+    <td>2017-10-25</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1009">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1009" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1009</td>
+                                    <td>12</td>
+				    <td>1.79</td>
+				    <td>2017-10-25</td>
+				    <td>Kiriakou Giorgos</td>
+				    <td>Souli 48</td>
+				    <td>Thomos Marios
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1010</td>
+    <td>28</td>
+    <td>4.20</td>
+    <td>2017-10-26</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1010">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1010" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1010</td>
+                                    <td>28</td>
+				    <td>4.20</td>
+				    <td>2017-10-26</td>
+				    <td>Dellios Giannis</td>
+				    <td>Agiou Dimitriou 159</td>
+				    <td>Graikos Alex
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1011</td>
+    <td>17</td>
+    <td>2.55</td>
+    <td>2017-10-26</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1011">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1011" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1011</td>
+                                    <td>17</td>
+				    <td>2.55</td>
+				    <td>2017-10-26</td>
+				    <td>Kazantzis Kostis</td>
+				    <td>Ethnikis Aminis 85</td>
+				    <td>Konstantopoulos Georgios
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1012</td>
+    <td>35</td>
+    <td>5.25</td>
+    <td>2017-10-26</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1012">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1012" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1012</td>
+                                    <td>35</td>
+				    <td>5.25</td>
+				    <td>2017-10-26</td>
+				    <td>Konstantopoulos Georgios (Get Well :( )</td>
+				    <td>Mitropoleos 12</td>
+				    <td>Demetriou Adonis
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1013</td>
+    <td>94</td>
+    <td>14.10</td>
+    <td>2017-10-26</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1013">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1013" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1013</td>
+                                    <td>94</td>
+				    <td>14.10</td>
+				    <td>2017-10-26</td>
+				    <td>Thomos Marios</td>
+				    <td>Kassandrou 124</td>
+				    <td>Keramaris Kostas
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1014</td>
+    <td>42</td>
+    <td>6.30</td>
+    <td>2017-10-27</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1014">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1014" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1014</td>
+                                    <td>42</td>
+				    <td>6.30</td>
+				    <td>2017-10-27</td>
+				    <td>Demetriou Adonis</td>
+				    <td>Pafou 420</td>
+				    <td>Karapatsias Vasilis
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1015</td>
+    <td>59</td>
+    <td>8.85</td>
+    <td>2017-10-27</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1015">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1015" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1015</td>
+                                    <td>59</td>
+				    <td>8.85</td>
+				    <td>2017-10-27</td>
+				    <td>Adalakis Lefteris</td>
+				    <td>Tripanou 63</td>
+				    <td>Kiriakou Giorgos
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1017</td>
+    <td>65</td>
+    <td>9.75</td>
+    <td>2017-10-27</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1017">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1017" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1017</td>
+                                    <td>65</td>
+				    <td>9.75</td>
+				    <td>2017-10-27</td>
+				    <td>Karapatsias Vasilis</td>
+				    <td>Pennsylvania Avenue 1600</td>
+				    <td>Kazantzis Kostis
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1023</td>
+    <td>28</td>
+    <td>4.00</td>
+    <td>2017-10-27</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1023">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1023" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1023</td>
+                                    <td>28</td>
+				    <td>4.00</td>
+				    <td>2017-10-27</td>
+				    <td>Demetriou Adonis</td>
+				    <td>Pafou 420</td>
+				    <td>Graikos Alex
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1021</td>
+    <td>35</td>
+    <td>5.25</td>
+    <td>2017-10-28</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1021">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1021" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1021</td>
+                                    <td>35</td>
+				    <td>5.25</td>
+				    <td>2017-10-28</td>
+				    <td>Graikos Alex</td>
+				    <td>Oxi Avenue 12</td>
+				    <td>Graikos Alex
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1022</td>
+    <td>39</td>
+    <td>5.85</td>
+    <td>2017-10-28</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1022">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1022" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1022</td>
+                                    <td>39</td>
+				    <td>5.85</td>
+				    <td>2017-10-28</td>
+				    <td>Keramaris Kostas</td>
+				    <td>Nikolaou Manmou 25</td>
+				    <td>Graikos Alex
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1028</td>
+    <td>38</td>
+    <td>5.10</td>
+    <td>2017-10-28</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1028">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1028" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1028</td>
+                                    <td>38</td>
+				    <td>5.10</td>
+				    <td>2017-10-28</td>
+				    <td>Demetriou Adonis</td>
+				    <td>Pafou 420</td>
+				    <td>Graikos Alex
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1027</td>
+    <td>65</td>
+    <td>9.75</td>
+    <td>2017-10-28</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1027">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1027" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1027</td>
+                                    <td>65</td>
+				    <td>9.75</td>
+				    <td>2017-10-28</td>
+				    <td>Karapatsias Vasilis</td>
+				    <td>Pennsylvania Avenue 1600</td>
+				    <td>Keramaris Kostas
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>1025</td>
+    <td>59</td>
+    <td>8.85</td>
+    <td>2017-10-28</td>
+    <td>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modal1025">Details</button>
+  	    <!-- Modal -->
+  	    <div class="modal fade" id="modal1025" role="dialog">
+    	        <div class="modal-dialog modal-lg"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Offer Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Offer ID</th>
+                                    <th>Power (kWH)</th>
+                                    <th>Price (EUR)</th>
+				    <th>Date</th>
+				    <th>Name</th>
+				    <th>Address</th>
+				    <th>Buyer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1025</td>
+                                    <td>59</td>
+				    <td>8.85</td>
+				    <td>2017-10-28</td>
+				    <td>Adalakis Lefteris</td>
+				    <td>Tripanou 63</td>
+				    <td>Kiriakou Giorgos
+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+    				</tbody>
+  				</table>
+
+			  </div>
+      </div>
+
+
+    </div>
+
+</body>
+
+
+</html>
