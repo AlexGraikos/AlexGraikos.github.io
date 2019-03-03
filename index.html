@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Personal blog. Info on past and current projects.">
+  <meta name="author" content="Alexander Graikos">
+
+  <title>Alexander Graikos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+  body {padding-top: 56px;}
+  body {padding-bottom: 28px;}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alexander Graikos</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+
+      <!-- Title -->
+      <h2 class="my-4">Alexander Graikos
+        <br>
+        <small>MEng. in Electrical and Computer Engineering - Machine Learning apprentice</small>
+      </h2>
+
+      <div class="col-md-8">
+        <!-- Projects -->
+        <div class="pb-2 mt-4 mb-2 border-bottom" id="projects">
+          <h3>Projects</h3>
+        </div>
+        <!-- Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="img/monocular_depth_estimation.gif">
+          <div class="card-body">
+            <h2 class="card-title">Monocular Depth Estimation using Generative Adversarial Networks</h2>
+            <p class="card-text"> Single image depth estimation methods were recently directed towards training deep predictive models. The limited availability of ground truth depth data, on which such models are trained, was overcome by approaches that address the task of monocular depth estimation as an image reconstruction problem. However, such methods are overshadowed by the same problems that trouble all deep generative models and regard their difficulty in training with classical methodologies. The proposed method trains a depth prediction network on stereoscopic data, utilizing the architecture of Generative Adversarial Networks. By replacing the composite reconstruction loss functions, that were up until now used, with the adversarial cost the depth inference network is trained more efficiently and offers higher detail estimations. The method was tested on the KITTI dataset, where it exhibits results that indicate the benefits of incorporating GANs in monocular depth estimation models. 
+            <br>
+            <br>
+            <a href="https://github.com/AlexGrecos/adversarial_depth_estimation" target="_blank">Details</a></p>
+          </div>
+        </div>
+
+        <!-- Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="img/haptic_cues.png">
+          <div class="card-body">
+            <h2 class="card-title">Haptic Cue detection from measured force input</h2>
+            <p class="card-text"> In order to further enhance physical human-robot collaboration, the user must be able to transfer messages to his robotic assistant through primitive haptic cues. Given that most human-friendly robots are not equipped with expensive force sensors we aim to enable that communication channel through the end effector force input estimations. The force signal is processed in real-time and extracted features are compared to an experimental knowledge base for decision making. The process is written as a ROS node and was used in conjunction with other applications from the AUTH Robotics Lab.
+            <br>
+            <br>
+            <a href="code/haptic_cues.zip" target="_blank">Code</a></p>
+          </div>
+        </div>
+
+        <!-- Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="img/gridy.png">
+          <div class="card-body">
+            <h2 class="card-title">Gridy - Energy consumption/production prediction</h2>
+            <p class="card-text"> For the purpose of the preECESCON 3 contest, we developed a smart-home energy consumption/production prediction application. We simulated the daily operation of four different households and used the collected data to train time series forecasting models. On top of that, we built a virtual energy marketplace on which each individual household would equalize its energy needs - either selling excess energy or acquiring its deficit.
+            <br>
+            <br>
+            <a href="https://www.youtube.com/watch?v=FXG3xSI7Q88" target="_blank">Contest presentation video (in Greek)</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+ <!-- Contact Info -->
+  <div class="container" id="contact">
+    <div class="pb-2 mt-4 mb-2 border-bottom" id="projects">
+      <h3>Contact</h3>
+    </div>
+    <div class="card" style="width: 26rem;">
+      <div class="card-body">
+          <p> <b>Email</b>: graikosal@gmail.com <br>
+              <b>Blog</b>: <a href="#">https://alexgrecos.github.io</a>
+              <br>
+              <b>Shameless plug:</b> <a href="https://hoi-poifarplanewind.bandcamp.com/" target="_blank">My band</a></p>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
