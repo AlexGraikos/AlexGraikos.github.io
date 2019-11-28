@@ -1,165 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Hellow there! -->
+<!-- Helow there! -->
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal blog. Info on past and current projects.">
-  <meta name="author" content="Alexandros Graikos">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal page - Info on past and current projects.">
+    <meta name="author" content="Alexandros Graikos">
 
-  <title>Alexandros Graikos</title>
+    <title>Alexandros Graikos</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-social.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Custom CSS -->
-  <style>
-  body {padding-top: 56px;}
-  body {padding-bottom: 28px;}
-
-  .card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-  }
-  .imgContainer {
-    overflow: hidden;
-    width: 400px;
-    height: 300px;
-    position: relative;
-  }
-  .imgContainer img {
-    position: absolute;
-    left: -1000%;
-    right: -1000%;
-    top: -1000%;
-    bottom: -1000%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-  }
-  </style>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        
+        body {
+            padding-bottom: 28px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Alexandros Graikos</a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
     <div class="container">
-      <a class="navbar-brand" href="#">Alexandros Graikos</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#top">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <div class="row">
+            <div class="container-fluid">
 
-  <!-- Page Content -->
-  <div class="container">
-  <div class="row">
-  <div class="container-fluid">
-
-    <!-- Title -->
-    <div class="col-12 mt-3">
-        <div class="card">
-            <div class="card-horizontal">
-                <div class="img-square-wrapper">
-                    <img class="" src="content/img/me.jpeg" width="200">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Alexandros Graikos</h2>
-                    <p class="card-text">Diploma in Electrical and Computer Engineering. Currently working as a research assistant
-                    at the Aristotle University of Thessaloniki as part of the 
-                    <a href="https://protein-h2020.eu/" target="_blank">Protein</a> program.
-                </div>
-            </div>
-            <div>
-                Contact me at <a href = "mailto: graikosal@gmail.com">graikosal@gmail.com</a>
-                <a class="btn btn-social-icon btn-lg btn-github" href ="https://github.com/AlexGrecos">
-                    <span class="fa fa-github"></span> 
-                </a>
-                <b>CV</b>: 
-                <a href="content/txt/cv.pdf" target="_blank">English</a>, 
-                <a href="content/txt/cv_greek.pdf" target="_blank">Greek</a>
-                <br>
-                <b>Shameless plug:</b> <a href="https://hoi-poifarplanewind.bandcamp.com/" target="_blank">My band</a> 
-            </div>
-        </div>
-     </div>
-
-    <!-- Projects -->
-    <div class="pb-2 mt-4 mb-2 border-bottom" id="projects">
-      <h3>Projects</h3>
-    </div>
-
-    <!-- Post -->
-    <div class="col-md-10 mt-3 mb-3">
-        <div class="card">
-            <div class="card-horizontal">
-                <div class="img-square-wrapper">
-                    <div class="imgContainer">
-                        <img class="" src="content/img/food_vol_est.gif">
+                <!-- Title -->
+                <div class="col-12 mt-3">
+                    <div class="card">
+                        <div class="card-body row">
+                            <div class="col-sm-3 my-auto">
+                                <img class="img-fluid" alt="me duh" src="content/img/me.jpeg">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3>Alexandros Graikos</h3>
+                                <p>Diploma in Electrical and Computer Engineering. Currently a research assistant at the Aristotle University of Thessaloniki as part of the
+                                    <a href="https://protein-h2020.eu/" target="_blank">Protein</a> program. Contact me at <a href="mailto: graikosal@gmail.com">graikosal@gmail.com</a>.</p>
+                                <p class="h6"><a href="https://github.com/AlexGrecos" target="_blank" class="badge badge-info">GitHub</a>
+                                    <a href="content/txt/cv.pdf" target="_blank" class="badge badge-info">CV(en)</a>
+                                    <a href="content/txt/cv_greek.pdf" target="_blank" class="badge badge-info">CV(gr)</a>
+                                    <a href="https://hoi-poifarplanewind.bandcamp.com/" target="_blank" class="badge badge-warning">Band</a></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Single-Image Based Food Volume Estimation</h4>
-                    <p class="card-text"> Part of the EU-funded research project 
-                    <a href="https://protein-h2020.eu/" target="_blank">Protein</a>. 
-                    Applying deep learning models to estimate the food volume in a given RGB image.
-                    Aiming to establish a user-friendly and scalable system, that trained on easily collected data, 
-                    is able to accurately estimate the depicted food portions.</p>
-                </div>
-            </div>
-            <div class="card-footer">
-                <a href="content/txt/hci2020_graikos_etal_extended_abstract.pdf" target="_blank">
-                Submission to HCI-2020 (extended abstract)</a>
-                <small class="text-muted" style="float:right;">Current</small>
-            </div>
-        </div>
-    </div>
 
-    <!-- Post -->
-    <div class="col-md-10 mt-3 mb-3">
-        <div class="card">
-            <div class="card-horizontal">
-                <div class="img-square-wrapper">
-                    <div class="imgContainer">
-                        <img class="" src="content/img/monocular_depth_estimation.gif">
+                    <!-- Projects -->
+                    <div class="pb-2 mt-4 mb-2 border-bottom" id="projects">
+                        <h3>Projects</h3>
                     </div>
+
+                    <!-- Post -->
+                    <div class="col sm-10 mt-4 mb-2">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="col-sm-2 my-auto">
+                                    <a href="content/img/food_vol_est.gif" target="_blank">
+                                        <img class="img-fluid" alt="food_volume_estimation" src="content/img/food_vol_est.gif">
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>Single-Image Based Food Volume Estimation</h4>
+                                    <p> Part of the EU-funded research project
+                                        <a href="https://protein-h2020.eu/" target="_blank">Protein</a>. Applying deep learning models to estimate the food volume in a given RGB image. Aiming to establish a user-friendly and scalable system, that trained on easily collected data, is able to accurately estimate the depicted food portions.</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="content/txt/hci2020_graikos_etal_extended_abstract.pdf" target="_blank" class="badge badge-dark">PDF (abstract)</a>
+                                <small class="text-muted" style="float:right;">Current</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post -->
+                    <div class="col sm-10 mt-4 mb-2">
+                        <div class="card">
+                            <div class="card-body row">
+                                <div class="col-sm-2 my-auto">
+                                    <a href="content/img/monocular_depth_estimation.gif" target="_blank">
+                                        <img class="img-fluid" alt="monocular_depth_estimation" src="content/img/monocular_depth_estimation.gif">
+                                    </a>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h4>Monocular Depth Estimation using Generative Adversarial Networks</h4>
+                                    <p> A novel approach to monocular depth estimation using Generative Adversarial Networks. The developed model was trained on the KITTI dataset where it exhibited promising results, showing the benefits of GANs versus common generative models. </p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://github.com/AlexGrecos/adversarial_depth_estimation" class="badge badge-dark" target="_blank">GitHub</a>
+                                <small class="text-muted" style="float:right;">2018</small>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="card-body">
-                    <h4 class="card-title">Monocular Depth Estimation using Generative Adversarial Networks</h4>
-                    <p class="card-text"> A novel approach to monocular depth estimation using Generative Adversarial Networks.
-                    The developed model was trained on the KITTI dataset where it exhibited promising results, showing the
-                    benefits of GANs versus common generative models.
-                </div>
-            </div>
-            <div class="card-footer">
-                <a href="https://github.com/AlexGrecos/adversarial_depth_estimation" target="_blank">GitHub repository</a>
-                <small class="text-muted" style="float:right;">2018</small>
             </div>
         </div>
-    </div>
 
-  </div>
-  </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 
