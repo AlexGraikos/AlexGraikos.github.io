@@ -1,220 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Helow there! -->
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal page - Info on past and current projects.">
-    <meta name="author" content="Alexandros Graikos">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Alexandros Graikos</title>
+  <title>Alexandros Graikos</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            padding-top: 56px;
-        }
-        
-        body {
-            padding-bottom: 28px;
-        }
-    </style>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 </head>
-
 <body>
+  <div class="panel">
+    <h1>Alexandros Graikos</h1>
+    <div class="panel-content">
+      <div class="text">
+        <p>
+        PhD student at Stony Brook University. Working on generative models for images.<br><br>
 
-    <!-- Navigation -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Alexandros Graikos</a>
-            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="content/txt/cv.pdf" target="_blank">CV</a>
-                    </li>
-                </ul>
-            </div>
+        I am part of the <a href="https://www3.cs.stonybrook.edu/~cvl/index.html" target="_blank">Computer Vision Lab</a>, advised by 
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>.
+        You can find more details about our work on diffusion models for the digital histopathology and satellite image domains <a href="https://histodiffusion.github.io/" target="_blank">here</a>.<br><br>
+        I also interned at Microsoft Research.
+        My mentor is 
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic</a>,
+        with whom we work on interesting diffusion model problems.
+        </p>
+        <div class="links">
+            <a href="mailto:agraikos@cs.stonybrook.edu" target="_blank">Email</a> / 
+            <a href="https://github.com/AlexGraikos" target="_blank">GitHub</a> / 
+            <a href="https://scholar.google.com/citations?user=1J7ZAUAAAAAJ" target="_blank">Google Scholar</a>
         </div>
-    </nav>
+      </div>
+      <img src="content/img/me_cropped.jpg" alt="me?">
+    </div>
+  </div>
 
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="container-fluid">
 
-                <!-- Title -->
-                <div class="col-12 mt-3">
-                    <div class="card">
-                        <div class="card-body row">
-                            <div class="col-sm-3 my-auto">
-                                <img class="img-fluid" alt="me duh" src="content/img/me.jpg">
-                            </div>
-                            <div class="col-sm-9">
-                                <h3>Alexandros Graikos</h3>
-                                <p>PhD student at Stony Brook University, NY. <br>
-                                Previously a research assistant at the Aristotle University of Thessaloniki. <br>
-                                Contact me at <a href="mailto: graikosal@gmail.com">graikosal@gmail.com</a>.</p>
-                                <table class="table table-responsive">
-                                    <tr>
-                                        <td class="align-middle">
-                                            <a href="https://github.com/AlexGraikos" target="_blank">
-                                                <i class="fa fa-github" style="font-size:36px; color:#000000"></i>
-                                            </a>
-                                        </td>
-                                        <td class="align-middle">
-                                            <a href="https://hoi-poi.bandcamp.com/" target="_blank">
-                                                <i class="fa fa-bandcamp" style="font-size:24px; color:#629AA9"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+  <div class="header-panel">
+    <h1>Research</h1>
+  </div>
 
-                    <!-- Projects -->
-                    <div class="pb-2 mt-4 mb-2 border-bottom" id="projects">
-                        <h3>Projects</h3>
-                    </div>
+  <!-- NewtonDiff -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/newton.png"
+             data-animated="content/img/newton.gif"
+             alt="GIF Toggle" id="newtonGIF">
+      </div>
 
-                    <!-- Post -->
-                    <div class="col sm-10 mt-4 mb-2">
-                        <div class="card">
-                            <div class="card-body row">
-                                <div class="col-sm-2 my-auto">
-                                    <a href="content/img/histo.jpg" target="_blank">
-                                        <img class="img-fluid" alt="histo_image" src="content/img/histo.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4>Generative Models for Digital Histopathology</h4>
-                                    <p> Part of my work at Stony Brook University to develop generative foundation models for the digital histopathology domain. Mainly focused on developing domain-specific diffusion generative models and their applications in digital histopathology. Visit <a href="https://histodiffusion.github.io/">the project page</a> for more info.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://histodiffusion.github.io" class="badge badge-dark" target="_blank">Project page</a>
-                                <small class="text-muted" style="float:right;">CVPR 2024, WACV 2024</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Post -->
-                    <div class="col sm-10 mt-4 mb-2">
-                        <div class="card">
-                            <div class="card-body row">
-                                <div class="col-sm-2 my-auto">
-                                    <a href="content/img/tsp_solution.gif" target="_blank">
-                                        <img class="img-fluid" alt="tsp_solution" src="content/img/tsp_solution.gif">
-                                    </a>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4>Diffusion Models as Plug-and-Play Priors</h4>
-                                    <p> We consider the problem of inferring high-dimensional data in a model that consists of a prior and an auxiliary constraint. The prior is an independently trained DDPM and the auxiliary constraint is expected to have a differentiable form but can come from diverse sources. The possibility of such inference turns diffusion models into plug-and-play modules, thereby allowing a range of potential applications, such as conditional generation, image segmentation and solving combinatorial optimization problems.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/AlexGraikos/diffusion_priors" class="badge badge-dark" target="_blank">GitHub</a>
-                                <a href="https://arxiv.org/abs/2206.09012" target="_blank" class="badge badge-dark">arXiv</a>
-                                <small class="text-muted" style="float:right;">NeurIPS 2022</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Post -->
-                    <div class="col sm-10 mt-4 mb-2">
-                        <div class="card">
-                            <div class="card-body row">
-                                <div class="col-sm-2 my-auto">
-                                    <a href="content/img/seducer.gif" target="_blank">
-                                        <img class="img-fluid" alt="seducer" src="content/img/seducer.gif">
-                                    </a>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4>Resolving label uncertainty with implicit posterior models</h4>
-                                    <p> Internship project at Microsoft Research. Introduced a method for inferring labels across a collection of data samples where instead of hard labels we only have access to coarse and imprecise sources of information for each sample. The proposed algorithms were demonstrated on diverse problems ranging from classification with negative training examples, to co-segmentation of video frames and coarsely supervised text classification.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/estherrolf/implicit-posterior" class="badge badge-dark" target="_blank">GitHub</a>
-                                <a href="https://arxiv.org/abs/2202.14000" target="_blank" class="badge badge-dark">arXiv</a>
-                                <small class="text-muted" style="float:right;">
-                                    <a href="https://openreview.net/forum?id=rfGNz_Uiqgq">UAI 2022</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Post -->
-                    <div class="col sm-10 mt-4 mb-2">
-                        <div class="card">
-                            <div class="card-body row">
-                                <div class="col-sm-2 my-auto">
-                                    <a href="content/img/food_vol_est.gif" target="_blank">
-                                        <img class="img-fluid" alt="food_volume_estimation" src="content/img/food_vol_est.gif">
-                                    </a>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4>Single-Image Based Food Volume Estimation</h4>
-                                    <p> Part of the EU-funded research project
-                                        <a href="https://protein-h2020.eu/" target="_blank">Protein</a>. Applying deep learning models to estimate the food volume in a given RGB image. Aiming to establish a user-friendly and easy-to-train system, able to accurately estimate the depicted food portion's nutritional value.</p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/AlexGraikos/food_volume_estimation" class="badge badge-dark" target="_blank">GitHub</a>
-                                <a href="https://protein-h2020.eu/wp-content/uploads/2020/09/Single-Image-Based-Food-Volume-Estimation-Using-Monocular-Depth-Prediction-Networks.pdf" target="_blank" class="badge badge-dark">Paper</a>
-                                <small class="text-muted" style="float:right;">
-                                    <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38">HCI 2020</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Post -->
-                    <div class="col sm-10 mt-4 mb-2">
-                        <div class="card">
-                            <div class="card-body row">
-                                <div class="col-sm-2 my-auto">
-                                    <a href="content/img/monocular_depth_estimation.gif" target="_blank">
-                                        <img class="img-fluid" alt="monocular_depth_estimation" src="content/img/monocular_depth_estimation.gif">
-                                    </a>
-                                </div>
-                                <div class="col-sm-10">
-                                    <h4>Monocular Depth Estimation using Generative Adversarial Networks</h4>
-                                    <p> A novel approach to monocular depth estimation using Generative Adversarial Networks. The developed model was trained on the KITTI dataset where it exhibited promising results, showing the benefits of GANs versus common generative models. </p>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/AlexGrecos/adversarial_depth_estimation" class="badge badge-dark" target="_blank">GitHub</a>
-                                <small class="text-muted" style="float:right;">
-                                    <a href="http://ikee.lib.auth.gr/record/300850?ln=el">Thesis - 2018</a>
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2410.18804" target="_blank">
+          <strong>Fast constrained sampling in pre-trained diffusion models</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>Preprint</i><br>
+        Using Newton's method we speed up training-free inference with arbitrary constraints up to 30x. This is the algorithm that powers <a href="#zoomldmGIF">ZoomLDM</a>.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/fast-constrained-sampling" target="_blank">Code</a> /
+          <a href="https://arxiv.org/abs/2410.18804" target="_blank">arXiv</a>
         </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_newton = document.getElementById("newtonGIF");
+    const staticSrc_newton = gif_newton.src;
+    const animatedSrc_newton = gif_newton.getAttribute("data-animated");
+    gif_newton.addEventListener("mouseover", () => {
+        gif_newton.src = animatedSrc_newton + "?t=" + new Date().getTime();
+    });
+    gif_newton.addEventListener("mouseout", () => {
+      gif_newton.src = staticSrc_newton;
+    });
+  </script>
+  <!-- NewtonDiff -->
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- ZoomLDM -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/zoomldm.png"
+             data-animated="content/img/zoomldm.gif"
+             alt="GIF Toggle" id="zoomldmGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2411.16969" target="_blank">
+            <strong>ZoomLDM: Latent Diffusion Model for multi-scale image generation</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        Rajarsi R. Gupta,
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>CVPR, 2025</i><br>
+        We propose a multi-scale diffusion model to make generation of massive pathology images feasible.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/ZoomLDM" target="_blank">Code</a> /
+          <a href="https://arxiv.org/abs/2411.16969" target="_blank">arXiv</a> /
+          <a href="https://histodiffusion.github.io/pages/zoomldm_large_images/large_images.html" target="_blank">Large Image Viewer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_zoomldm = document.getElementById("zoomldmGIF");
+    const staticSrc_zoomldm = gif_zoomldm.src;
+    const animatedSrc_zoomldm = gif_zoomldm.getAttribute("data-animated");
+    gif_zoomldm.addEventListener("mouseover", () => {
+        gif_zoomldm.src = animatedSrc_zoomldm + "?t=" + new Date().getTime();
+    });
+    gif_zoomldm.addEventListener("mouseout", () => {
+      gif_zoomldm.src = staticSrc_zoomldm;
+    });
+  </script>
+  <!-- ZoomLDM -->
+
+  <!-- CVPR24 -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/cvpr24.png"
+             data-animated="content/img/cvpr24.gif"
+             alt="GIF Toggle" id="cvpr24GIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2312.07330" target="_blank">
+          <strong>Learned representation-guided diffusion models for large-image generation</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <a href="https://minhquanlecs.github.io/" target="_blank">Minh-Quan Le,</a>
+        <a href="https://saarthak-kapse.github.io/" target="_blank">Saarthak Kapse,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>CVPR, 2024</i><br>
+        We use self-supervised models to provide annotations for diffusion models in digital pathology. Exploiting the unique structure of the data, we synthesize large images with only a patch-based model.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/Large-Image-Diffusion" target="_blank">Code</a> /
+          <a href="https://arxiv.org/abs/2312.07330" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_cvpr24 = document.getElementById("cvpr24GIF");
+    const staticSrc_cvpr24 = gif_cvpr24.src;
+    const animatedSrc_cvpr24 = gif_cvpr24.getAttribute("data-animated");
+    gif_cvpr24.addEventListener("mouseover", () => {
+        gif_cvpr24.src = animatedSrc_cvpr24 + "?t=" + new Date().getTime();
+    });
+    gif_cvpr24.addEventListener("mouseout", () => {
+      gif_cvpr24.src = staticSrc_cvpr24;
+    });
+  </script>
+  <!-- CVPR24 -->
+
+  <!-- Denoiser Representations -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/denoiserrepr.png"
+             data-animated="content/img/denoiserrepr.gif"
+             alt="GIF Toggle" id="denoiserreprGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2306.1900" target="_blank">
+          <strong>Conditional Generation from Unconditional Diffusion Models using Denoiser Representations</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>BMVC, 2023</i><br>
+        We show that we can learn to control generation with as few as 20 examples using the existing denoiser representations.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/fewshot-conditional-diffusion" target="_blank">Code</a> / 
+          <a href="https://arxiv.org/abs/2306.1900" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_denoiserrepr = document.getElementById("denoiserreprGIF");
+    const staticSrc_denoiserrepr = gif_denoiserrepr.src;
+    const animatedSrc_denoiserrepr = gif_denoiserrepr.getAttribute("data-animated");
+    gif_denoiserrepr.addEventListener("mouseover", () => {
+        gif_denoiserrepr.src = animatedSrc_denoiserrepr + "?t=" + new Date().getTime();
+    });
+    gif_denoiserrepr.addEventListener("mouseout", () => {
+      gif_denoiserrepr.src = staticSrc_denoiserrepr;
+    });
+  </script>
+  <!-- Denoiser Representations -->
+
+  <!-- GFN-EM -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/gfnem.png"
+             data-animated="content/img/gfnem.gif"
+             alt="GIF Toggle" id="gfnGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2302.06576" target="_blank">
+          <strong>GFlowNet-EM for learning compositional latent variable models</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://edwardjhu.com/" target="_blank">Edward Hu,</a>
+        <a href="https://malkin1729.github.io/" target="_blank">Nikolay Malkin,</a>
+        <a href="https://mj10.github.io/" target="_blank">Moksh Jain,</a> 
+        <a href="https://www.katieeverett.com/" target="_blank">Katie Everett,</a>
+        <strong>Alexandros Graikos,</strong> 
+        Yoshua Bengio
+        <br>
+        <i>ICML, 2023</i><br>
+        A <a href="https://yoshuabengio.org/2022/03/05/generative-flow-networks/" target="_blank">GFlowNet</a> can be used as the encoder in a discrete autoencoder model. The flexibility of GFlowNets opens up possibilities for training image encoders with compositional latents.
+        </p>
+        <div class="links">
+          <a href="https://github.com/GFNOrg/GFlowNet-EM/tree/main/discrete_vae" target="_blank">Code</a> / 
+          <a href="https://arxiv.org/abs/2302.06576" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_gfn = document.getElementById("gfnGIF");
+    const staticSrc_gfn = gif_gfn.src;
+    const animatedSrc_gfn = gif_gfn.getAttribute("data-animated");
+    gif_gfn.addEventListener("mouseover", () => {
+        gif_gfn.src = animatedSrc_gfn + "?t=" + new Date().getTime();
+    });
+    gif_gfn.addEventListener("mouseout", () => {
+      gif_gfn.src = staticSrc_gfn;
+    });
+  </script>
+  <!-- GFN-EM -->
+
+  <!-- Plug-and-play -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/tsp_solution.png"
+             data-animated="content/img/tsp_solution.gif"
+             alt="GIF Toggle" id="tspGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2206.09012" target="_blank">
+          <strong>Diffusion models as plug-and-play priors</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://malkin1729.github.io/" target="_blank">Nikolay Malkin,</a>
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>NeurIPS, 2022</i><br>
+        Diffusion models can be used in inference tasks without any additional training. You can even solve the traveling salesman problem with a diffusion model (left).
+        </p>
+        <div class="links">
+          <a href="https://github.com/AlexGraikos/diffusion_priors" target="_blank">Code</a> / 
+          <a href="https://arxiv.org/abs/2206.09012" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_tsp = document.getElementById("tspGIF");
+    const staticSrc_tsp = gif_tsp.src;
+    const animatedSrc_tsp = gif_tsp.getAttribute("data-animated");
+    gif_tsp.addEventListener("mouseover", () => {
+      gif_tsp.src = animatedSrc_tsp + "?t=" + new Date().getTime();
+    });
+    gif_tsp.addEventListener("mouseout", () => {
+      gif_tsp.src = staticSrc_tsp;
+    });
+  </script>
+  <!-- Plug-and-play -->
+
+  <!-- Implicit posterior models -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/seducer.png"
+             data-animated="content/img/seducer.gif"
+             alt="GIF Toggle" id="seducerGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2202.14000" target="_blank">
+          <strong>Resolving label uncertainty with implicit generative models</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://www.estherrolf.com/" target="_blank">Esther Rolf,</a>
+        <a href="https://malkin1729.github.io/" target="_blank">Nikolay Malkin,</a>
+        <strong>Alexandros Graikos,</strong> 
+        Ana Jojic,
+        <a href="https://calebrob.com/" target="_blank">Caleb Robinson,</a>
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic</a>
+        <br>
+        <i>UAI, 2022</i><br>
+        Images with imprecise annotations can be used to define an <i>implicit</i> generative model. An implicit generative model can resolve the uncertainty of the labels, making the annotations precise. 
+        </p>
+        <div class="links">
+          <a href="https://github.com/estherrolf/implicit-posterior" target="_blank">Code</a> / 
+          <a href="https://arxiv.org/abs/2202.14000" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_seducer = document.getElementById("seducerGIF");
+    const staticSrc_seducer = gif_seducer.src;
+    const animatedSrc_seducer = gif_seducer.getAttribute("data-animated");
+    gif_seducer.addEventListener("mouseover", () => {
+      gif_seducer.src = animatedSrc_seducer + "?t=" + new Date().getTime();
+    });
+    gif_seducer.addEventListener("mouseout", () => {
+      gif_seducer.src = staticSrc_seducer;
+    });
+  </script>
+  <!-- Implicit posterior models -->
+
+  <!-- Food volume estimation -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/food_vol_est.png"
+             data-animated="content/img/food_vol_est.gif"
+             alt="GIF Toggle" id="foodGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38" target="_blank">
+          <strong>Single-Image Based Food Volume Estimation</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        Vasileios Charisis,
+        Dimitrios Iakovakis, 
+        Stelios Hadjidimitriou, 
+        <a href="https://www.ku.ac.ae/college-people/leontios-hadjileontiadis" target="_blank">Leontios Hadjileontiadis</a>
+        <br>
+        <i>HCI International, 2020</i><br>
+        Training and applying monocular depth estimation models to estimate the food volume from a given RGB image.
+        </p>
+        <div class="links">
+          <a href="https://github.com/AlexGraikos/food_volume_estimation" target="_blank">Code</a> / 
+          <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38" target="_blank">Paper</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_food = document.getElementById("foodGIF");
+    const staticSrc_food = gif_food.src;
+    const animatedSrc_food = gif_food.getAttribute("data-animated");
+    gif_food.addEventListener("mouseover", () => {
+      gif_food.src = animatedSrc_food + "?t=" + new Date().getTime();
+    });
+    gif_food.addEventListener("mouseout", () => {
+      gif_food.src = staticSrc_food;
+    });
+  </script>
+  <!-- Food volume estimation -->
+
+  <!-- Monodepth -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/monocular_depth_estimation.png"
+             data-animated="content/img/monocular_depth_estimation.gif"
+             alt="GIF Toggle" id="monodepthGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://github.com/AlexGraikos/adversarial_depth_estimation" target="_blank">
+        <strong>Monocular Depth Estimation using Generative Adversarial Networks</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://mug.ee.auth.gr/people/anastasios-delopoulos/" target="_blank">Anastasios Delopoulos</a>
+        <br>
+        <i>Undergraduate Thesis, 2018</i><br>
+        Adding GAN losses to monocular depth estimation models improves predicted depth accuracy.
+        </p>
+        <div class="links">
+          <a href="https://github.com/AlexGraikos/adversarial_depth_estimation" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_monodepth = document.getElementById("monodepthGIF");
+    const staticSrc_monodepth = gif_monodepth.src;
+    const animatedSrc_monodepth = gif_monodepth.getAttribute("data-animated");
+    gif_monodepth.addEventListener("mouseover", () => {
+      gif_monodepth.src = animatedSrc_monodepth + "?t=" + new Date().getTime();
+    });
+    gif_monodepth.addEventListener("mouseout", () => {
+      gif_monodepth.src = staticSrc_monodepth;
+    });
+  </script>
+  <!-- Monodepth -->
+
+  <div class="header-panel">
+    <h1 class="header">Papers</h1>
+  </div>
+
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="text">
+        <tr>
+            <strong><u>2025</u></strong>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2503.11591" target="_blank">
+            <strong>Pathology Image Compression with Pre-trained Autoencoders</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
+        <a href="https://zilinghan.github.io/" target="_blank">Zilinghan Li,</a>
+        <a href="https://www.anl.gov/profile/tarak-nath-nandi" target="_blank">Tarak Nath Nandi,</a>
+        <a href="https://www.anl.gov/profile/ravi-k-madduri" target="_blank">Ravi K Madduri,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>Preprint</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2411.16969" target="_blank">
+            <strong>ZoomLDM: Latent Diffusion Model for multi-scale image generation</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        Rajarsi R. Gupta,
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>CVPR, 2025</i><br>
+        </p>
+        </tr>
+
+        <tr>
+            <strong><u>2024</u></strong>
+        </tr>
+
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2412.01672" target="_blank">
+            <strong>Gen-SIS: Generative Self-augmentation Improves Self-supervised Learning</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://varunbelagali98.github.io/">Varun Belagali*,</a>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://saarthak-kapse.github.io/" target="_blank">Saarthak Kapse,</a>
+        <a href="https://zilinghan.github.io/" target="_blank">Zilinghan Li,</a>
+        <a href="https://www.anl.gov/profile/tarak-nath-nandi" target="_blank">Tarak Nath Nandi,</a>
+        <a href="https://www.anl.gov/profile/ravi-k-madduri" target="_blank">Ravi K Madduri,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>Preprint</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2410.18804" target="_blank">
+          <strong>Fast constrained sampling in pre-trained diffusion models</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>Preprint</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2407.14709" target="_blank">
+          <strong>∞-Brush: Controllable Large Image Synthesis with Diffusion Models in Infinite Dimensions</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://minhquanlecs.github.io/" target="_blank">Minh-Quan Le*,</a>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        Rajarsi Gupta, 
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>ECCV, 2024</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2406.02774" target="_blank">
+          <strong>Diffusion-Refined VQA Annotations for Semi-Supervised Gaze Following</strong><br>
+        </a>
+        </p>
+        <p>
+        Qiaomu Miao,
+        <strong>Alexandros Graikos,</strong> 
+        Jingwei Zhang,
+        <a href="https://sounakcs.github.io/" target="_blank">Sounak Mondal,</a>
+        <a href="https://minhhoai.net/" target="_blank">Minh Hoai,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>ECCV, 2024</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2312.07330" target="_blank">
+          <strong>Learned representation-guided diffusion models for large-image generation</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <a href="https://minhquanlecs.github.io/" target="_blank">Minh-Quan Le,</a>
+        <a href="https://saarthak-kapse.github.io/" target="_blank">Saarthak Kapse,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>CVPR, 2024</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2309.00748" target="_blank">
+          <strong>PathLDM: Text conditioned Latent Diffusion Model for Histopathology</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc" target="_blank">Tahsin Kurc,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>WACV, 2024</i><br>
+        </p>
+        </tr>
+
+        <tr>
+            <strong><u>2023</u></strong>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2306.1900" target="_blank">
+          <strong>Conditional Generation from Unconditional Diffusion Models using Denoiser Representations</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>BMVC, 2023</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2303.17712" target="_blank">
+          <strong>S-volsdf: Sparse multi-view stereo regularization of neural implicit surfaces</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://hao-yu-wu.github.io/" target="_blank">Haoyu Wu,</a>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>ICCV, 2023</i><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2302.06576" target="_blank">
+          <strong>GFlowNet-EM for learning compositional latent variable models</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://edwardjhu.com/" target="_blank">Edward Hu,</a>
+        <a href="https://malkin1729.github.io/" target="_blank">Nikolay Malkin,</a>
+        <a href="https://mj10.github.io/" target="_blank">Moksh Jain,</a> 
+        <a href="https://www.katieeverett.com/" target="_blank">Katie Everett,</a>
+        <strong>Alexandros Graikos,</strong> 
+        Yoshua Bengio
+        <br>
+        <i>ICML, 2023</i><br>
+        </p>
+        </tr>
+
+        <tr>
+            <strong><u>2022</u></strong>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2206.09012" target="_blank">
+          <strong>Diffusion models as plug-and-play priors</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://malkin1729.github.io/" target="_blank">Nikolay Malkin,</a>
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>NeurIPS, 2022</i><br>
+        </p>
+        </tr>
+
+        <table>
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2202.14000" target="_blank">
+          <strong>Resolving label uncertainty with implicit generative models</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://www.estherrolf.com/" target="_blank">Esther Rolf,</a>
+        <a href="https://malkin1729.github.io/" target="_blank">Nikolay Malkin,</a>
+        <strong>Alexandros Graikos,</strong> 
+        Ana Jojic,
+        <a href="https://calebrob.com/" target="_blank">Caleb Robinson,</a>
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic</a>
+        <br>
+        <i>UAI, 2022</i><br>
+        </p>
+        </tr>
+
+        <tr>
+            <strong><u>2020</u></strong>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38" target="_blank">
+          <strong>Single-Image Based Food Volume Estimation</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        Vasileios Charisis,
+        Dimitrios Iakovakis, 
+        Stelios Hadjidimitriou, 
+        <a href="https://www.ku.ac.ae/college-people/leontios-hadjileontiadis" target="_blank">Leontios Hadjileontiadis</a>
+        <br>
+        <i>HCI International, 2020</i><br>
+        </p>
+        </tr>
+      </div>
+    </div>
+  </div>
 
 </body>
-
 </html>
+

@@ -1,0 +1,136 @@
+/* Entire page */
+body {
+  background: #f4f4f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Top panel */
+.panel {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #f4f4f0;
+  padding: 20px;
+  text-align: left;
+}
+.panel-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.panel .text {
+  flex: 1;
+}
+.panel h1 {
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.panel p {
+  font-size: 14px;
+  color: #000;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+.panel img {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+/* Header */
+.header-panel {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px 0px 0px 0px;
+  text-align: left;
+}
+.header-panel h1 {
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000;
+}
+
+/* Publications */
+.publication {
+  background: #fff;
+  border: 4px solid #000;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 2px 2px 0 #000;
+  text-align: left;
+}
+.publication-content {
+  display: flex;
+  align-items: flex-start;
+}
+.publication img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #000;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.publication .text {
+  font-size: 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.publication p {
+  color: #000;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+.publication p.papertitle {
+  color: #000;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 1px;
+}
+.publication .links {
+  margin-top: auto;
+}
+.pubrication .links a {
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.pubrication .links a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* GIF thumbnails */
+.gif-container {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.gif-container img {
+  width: 100%;
+  height: 100%;
+  margin-right: 20px;
+  display: block;
+}
+
