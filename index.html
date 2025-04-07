@@ -178,6 +178,52 @@
   </script>
   <!-- CVPR24 -->
 
+  <!-- InftyBrush -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/inftybrush.png"
+             data-animated="content/img/inftybrush.gif"
+             alt="GIF Toggle" id="inftybrushGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2407.14709" target="_blank">
+          <strong>∞-Brush: Controllable Large Image Synthesis with Diffusion Models in Infinite Dimensions</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://minhquanlecs.github.io/" target="_blank">Minh-Quan Le*,</a>
+        <strong>Alexandros Graikos*,</strong> 
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        Rajarsi Gupta, 
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>ECCV, 2024</i><br>
+        Using ∞-dimensional diffusion models to generate large pathology and satellite images.
+        </p>
+        <div class="links">
+          <a href="https://arxiv.org/abs/2407.14709" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_inftybrush = document.getElementById("inftybrushGIF");
+    const staticSrc_inftybrush = gif_inftybrush.src;
+    const animatedSrc_inftybrush = gif_inftybrush.getAttribute("data-animated");
+    gif_inftybrush.addEventListener("mouseover", () => {
+        gif_inftybrush.src = animatedSrc_inftybrush + "?t=" + new Date().getTime();
+    });
+    gif_inftybrush.addEventListener("mouseout", () => {
+      gif_inftybrush.src = staticSrc_inftybrush;
+    });
+  </script>
+  <!-- CVPR24 -->
+
+
   <!-- Denoiser Representations -->
   <div class="publication">
     <div class="publication-content"> 
