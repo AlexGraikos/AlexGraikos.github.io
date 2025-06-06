@@ -51,6 +51,60 @@
     <h1>Research</h1>
   </div>
 
+  <!-- PixCell -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/pixcell.png"
+             data-animated="content/img/pixcell.gif"
+             alt="GIF Toggle" id="pixcellGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2506.05127" target="_blank">
+          <strong>PixCell: A generative foundation model for digital histopathology images</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://zilinghan.github.io/" target="_blank">Zilinghan Li,</a>
+        <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
+        <a href="https://varunbelagali98.github.io/">Varun Belagali,</a>
+        <a href="https://saarthak-kapse.github.io/" target="_blank">Saarthak Kapse,</a>
+        <a href="https://www.anl.gov/profile/tarak-nath-nandi" target="_blank">Tarak Nath Nandi,</a>
+        <a href="https://www.anl.gov/profile/ravi-k-madduri" target="_blank">Ravi K Madduri,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc" target="_blank">Tashin Kirc,</a>
+        Rajarsi R. Gupta,
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>Preprint</i><br>
+        The first generative foundation model for digital histopathology images.
+        </p>
+        <div class="links">
+          <a href="https://huggingface.co/StonyBrook-CVLab/PixCell-1024" target="_blank">PixCell-1024 🤗</a> /
+          <a href="https://huggingface.co/StonyBrook-CVLab/PixCell-256" target="_blank">PixCell-256 🤗</a> /
+          <a href="https://arxiv.org/abs/2506.05127" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_pixcell = document.getElementById("pixcellGIF");
+    const staticSrc_pixcell = gif_pixcell.src;
+    const animatedSrc_pixcell = gif_pixcell.getAttribute("data-animated");
+    gif_pixcell.addEventListener("mouseover", () => {
+        gif_pixcell.src = animatedSrc_pixcell + "?t=" + new Date().getTime();
+    });
+    gif_pixcell.addEventListener("mouseout", () => {
+      gif_pixcell.src = staticSrc_pixcell;
+    });
+  </script>
+  <!-- PixCell -->
+
   <!-- NewtonDiff -->
   <div class="publication">
     <div class="publication-content"> 
@@ -509,6 +563,31 @@
       <div class="text">
         <tr>
             <strong><u>2025</u></strong>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2506.05127" target="_blank">
+            <strong>PixCell: A generative foundation model for digital histopathology images</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://zilinghan.github.io/" target="_blank">Zilinghan Li,</a>
+        <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
+        <a href="https://varunbelagali98.github.io/">Varun Belagali,</a>
+        <a href="https://saarthak-kapse.github.io/" target="_blank">Saarthak Kapse,</a>
+        <a href="https://www.anl.gov/profile/tarak-nath-nandi" target="_blank">Tarak Nath Nandi,</a>
+        <a href="https://www.anl.gov/profile/ravi-k-madduri" target="_blank">Ravi K Madduri,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/tahsin_kurc" target="_blank">Tashin Kirc,</a>
+        Rajarsi R. Gupta,
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>Preprint</i><br>
+        </p>
         </tr>
 
         <tr>
