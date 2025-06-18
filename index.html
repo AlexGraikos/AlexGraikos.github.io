@@ -148,6 +148,55 @@
   </script>
   <!-- NewtonDiff -->
 
+  <!-- PathAE -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/pathae.png"
+             data-animated="content/img/pathae.gif"
+             alt="GIF Toggle" id="pathaeGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2503.11591" target="_blank">
+            <strong>Pathology Image Compression with Pre-trained Autoencoders</strong><br>
+        </a>
+        </p>
+        <p>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
+        <a href="https://zilinghan.github.io/" target="_blank">Zilinghan Li,</a>
+        <a href="https://www.anl.gov/profile/tarak-nath-nandi" target="_blank">Tarak Nath Nandi,</a>
+        <a href="https://www.anl.gov/profile/ravi-k-madduri" target="_blank">Ravi K Madduri,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
+        <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>MICCAI, 2025</i><br>
+        The autoencoders used in latent diffusion models are excellent image compressors. Along with a pathology perceptual loss, fine-tuned AEs are signifficantly better than JPEG.
+        </p>
+        <div class="links">
+          <a href="https://huggingface.co/collections/StonyBrook-CVLab/pathology-fine-tuned-aes-67d45f223a659ff2e3402dd0" target="_blank">Models 🤗</a> /
+          <a href="https://arxiv.org/abs/2503.11591" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_pathae = document.getElementById("pathaeGIF");
+    const staticSrc_pathae = gif_pathae.src;
+    const animatedSrc_pathae = gif_pathae.getAttribute("data-animated");
+    gif_pathae.addEventListener("mouseover", () => {
+        gif_pathae.src = animatedSrc_pathae + "?t=" + new Date().getTime();
+    });
+    gif_pathae.addEventListener("mouseout", () => {
+      gif_pathae.src = staticSrc_pathae;
+    });
+  </script>
+  <!-- PathAE -->
+
   <!-- ZoomLDM -->
   <div class="publication">
     <div class="publication-content"> 
@@ -607,7 +656,7 @@
         <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
         <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
         <br>
-        <i>Preprint</i><br>
+        <i>MICCAI, 2025</i><br>
         </p>
         </tr>
 
