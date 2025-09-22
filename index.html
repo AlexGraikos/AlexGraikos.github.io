@@ -52,6 +52,49 @@
     <h1>Research</h1>
   </div>
 
+  <!-- NewtonDiff -->
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/newton.png"
+             data-animated="content/img/newton.gif"
+             alt="GIF Toggle" id="newtonGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2410.18804" target="_blank">
+          <strong>Fast constrained sampling in pre-trained diffusion models</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>NeurIPS 2025</i><br>
+        We speed up training-free inference in diffusion models using an approximation to Newton's method. This is the algorithm that powers <a href="#zoomldmGIF">ZoomLDM</a>.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/fast-constrained-sampling" target="_blank">Code</a> /
+          <a href="https://arxiv.org/abs/2410.18804" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const gif_newton = document.getElementById("newtonGIF");
+    const staticSrc_newton = gif_newton.src;
+    const animatedSrc_newton = gif_newton.getAttribute("data-animated");
+    gif_newton.addEventListener("mouseover", () => {
+        gif_newton.src = animatedSrc_newton + "?t=" + new Date().getTime();
+    });
+    gif_newton.addEventListener("mouseout", () => {
+      gif_newton.src = staticSrc_newton;
+    });
+  </script>
+  <!-- NewtonDiff -->
+
   <!-- PixCell -->
   <div class="publication">
     <div class="publication-content"> 
@@ -106,49 +149,6 @@
   </script>
   <!-- PixCell -->
 
-  <!-- NewtonDiff -->
-  <div class="publication">
-    <div class="publication-content"> 
-      <div class="gif-container">
-        <img src="content/img/newton.png"
-             data-animated="content/img/newton.gif"
-             alt="GIF Toggle" id="newtonGIF">
-      </div>
-
-      <div class="text">
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2410.18804" target="_blank">
-          <strong>Fast constrained sampling in pre-trained diffusion models</strong><br>
-        </a>
-        </p>
-        <p>
-        <strong>Alexandros Graikos,</strong> 
-        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
-        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
-        <br>
-        <i>Preprint</i><br>
-        Using Newton's method we speed up training-free inference with arbitrary constraints up to 30x. This is the algorithm that powers <a href="#zoomldmGIF">ZoomLDM</a>.
-        </p>
-        <div class="links">
-          <a href="https://github.com/cvlab-stonybrook/fast-constrained-sampling" target="_blank">Code</a> /
-          <a href="https://arxiv.org/abs/2410.18804" target="_blank">arXiv</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    const gif_newton = document.getElementById("newtonGIF");
-    const staticSrc_newton = gif_newton.src;
-    const animatedSrc_newton = gif_newton.getAttribute("data-animated");
-    gif_newton.addEventListener("mouseover", () => {
-        gif_newton.src = animatedSrc_newton + "?t=" + new Date().getTime();
-    });
-    gif_newton.addEventListener("mouseout", () => {
-      gif_newton.src = staticSrc_newton;
-    });
-  </script>
-  <!-- NewtonDiff -->
-
   <!-- PathAE -->
   <div class="publication">
     <div class="publication-content"> 
@@ -165,7 +165,7 @@
         </a>
         </p>
         <p>
-        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada*,</a>
+        <a href="https://srikarym.github.io/" target="_blank">Srikar Yellapragada,</a>
         <strong>Alexandros Graikos,</strong> 
         <a href="https://kostino.github.io/" target="_blank">Kostas Triaridis,</a>
         <a href="https://zilinghan.github.io/" target="_blank">Zilinghan Li,</a>
@@ -614,6 +614,21 @@
         <tr>
             <strong><u>2025</u></strong>
         </tr>
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/abs/2410.18804" target="_blank">
+          <strong>Fast constrained sampling in pre-trained diffusion models</strong><br>
+        </a>
+        </p>
+        <p>
+        <strong>Alexandros Graikos,</strong> 
+        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
+        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
+        <br>
+        <i>NeurIPS, 2025</i><br>
+        </p>
+        </tr>
+
 
         <tr>
         <p class="papertitle">
@@ -701,21 +716,6 @@
         <a href="https://www.anl.gov/profile/ravi-k-madduri" target="_blank">Ravi K Madduri,</a>
         <a href="https://bmi.stonybrookmedicine.edu/people/prateek_prasanna" target="_blank">Prateek Prasanna,</a>
         <a href="https://bmi.stonybrookmedicine.edu/people/joel_saltz" target="_blank">Joel Saltz,</a>
-        <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
-        <br>
-        <i>Preprint</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2410.18804" target="_blank">
-          <strong>Fast constrained sampling in pre-trained diffusion models</strong><br>
-        </a>
-        </p>
-        <p>
-        <strong>Alexandros Graikos,</strong> 
-        <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic,</a>
         <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>
         <br>
         <i>Preprint</i><br>
