@@ -101,7 +101,14 @@ a:hover {
   color: #000;
   font-size: 16px;
   line-height: 1.4;
-  margin: 0 0 1px;
+  margin: 0 0 4px;
+}
+.publication p.authors {
+  font-style: italic;
+  margin: 0 0 2px;
+}
+.publication p.venue {
+  margin: 0 0 2px;
 }
 .publication .links {
   margin-top: auto;
