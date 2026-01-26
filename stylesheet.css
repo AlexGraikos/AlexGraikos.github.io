@@ -104,11 +104,14 @@ a:hover {
   margin: 0 0 4px;
 }
 .publication p.authors {
-  font-style: italic;
   margin: 0 0 2px;
 }
 .publication p.venue {
+  font-style: italic;
   margin: 0 0 2px;
+}
+.publication p.description {
+  margin: 8px 0 8px;
 }
 .publication .links {
   margin-top: auto;
