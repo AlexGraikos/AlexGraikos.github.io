@@ -28,11 +28,11 @@
         <p>
         I am a PhD candidate at Stony Brook University, advised by 
         <a href="https://www3.cs.stonybrook.edu/~samaras/" target="_blank">Dimitris Samaras</a>.
-        My work revolves around the <a href="https://arxiv.org/abs/2206.09012" target="_blank">rich image priors</a> encoded in deep generative denoising models.
-        I am interested in applying these priors to the <a href="https://histodiffusion.github.io/" target="_blank">digital histopathology and satellite image domains</a>.<br><br>
+        My research revolves around the <a href="https://arxiv.org/abs/2206.09012" target="_blank">image priors</a> encoded in deep generative denoising models, and their applications
+        to the <a href="https://histodiffusion.github.io/" target="_blank">digital histopathology and satellite image domains</a>.<br><br>
         I also interned at Microsoft Research where with my mentor 
         <a href="https://www.microsoft.com/en-us/research/people/jojic/" target="_blank">Nebojsa Jojic</a>
-        we worked on interesting generative prior problems.
+        we worked on generative prior problems.
         </p>
         <div class="links">
             <a href="mailto:" target="_blank">agraikos@cs.stonybrook.edu</a> / 
@@ -46,8 +46,83 @@
 
 
   <div class="header-panel">
-    <h1>Selected Research</h1>
+    <h1>Research</h1>
   </div>
+
+  <!-- Spectral -->
+  <!-- 
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/spectral.png"
+             data-animated="content/img/spectral.gif"
+             alt="Eigenvectors for an image" id="spectralGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/" target="_blank">
+          <strong>On the spectral properties of generative denoiser Jacobians</strong><br>
+        </a>
+        </p>
+        <p class="authors">
+        Alexandros Graikos,
+        Nebojsa Jojic,
+        Dimitris Samaras
+        </p>
+        <p class="venue">
+        Preprint
+        </p>
+        <p class="description">
+        In denoisers, the <span style='color:rgb(204, 27, 27);'>eigenvectors</span> of the Jacobian encode generation quality.
+        Increasing the spectrum during training improves generation quality.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/" target="_blank">Code</a> /
+          <a href="https://arxiv.org/" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- Spectral -->
+
+  <!-- BigCell -->
+  <!-- 
+  <div class="publication">
+    <div class="publication-content"> 
+      <div class="gif-container">
+        <img src="content/img/bigcell.png"
+             data-animated="content/img/bigcellzoom.png"
+             alt="WSI image" id="bigcellGIF">
+      </div>
+
+      <div class="text">
+        <p class="papertitle">
+        <a href="https://arxiv.org/" target="_blank">
+          <strong>BigCell: Generating Gigapixel Whole-Slide Images</strong><br>
+        </a>
+        </p>
+        <p class="authors">
+        Srikar Yellapragada, Alexandros Graikos, Zilinghan Li, Kostas Triaridis,
+        Tarak Nath Nandi, Ji Dong K Bai, Beatrice Knudsen, Tahsin Kurc, Prateek Prasanna,
+        Rajarsi R. Gupta, Ravi K Madduri, Joel Saltz, Dimitris Samaras
+        </p>
+        <p class="venue">
+        NeurIPS 2026
+        </p>
+        <p class="description">
+        We build a model to synthesize whole-slide images (32,000 x 32,000 pixels) in digital histopathology.
+        </p>
+        <div class="links">
+          <a href="https://github.com/cvlab-stonybrook/" target="_blank">Code</a> /
+          <a href="https://arxiv.org/" target="_blank">arXiv</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- BigCell -->
 
   <!-- NewtonDiff -->
   <div class="publication">
@@ -55,7 +130,7 @@
       <div class="gif-container">
         <img src="content/img/newton.png"
              data-animated="content/img/newton.gif"
-             alt="GIF Toggle" id="newtonGIF">
+             alt="Inpainting example" id="newtonGIF">
       </div>
 
       <div class="text">
@@ -65,15 +140,14 @@
         </a>
         </p>
         <p class="authors">
-        Alexandros Graikos,
-        Nebojsa Jojic,
-        Dimitris Samaras
+        Alexandros Graikos, Nebojsa Jojic, Dimitris Samaras
         </p>
         <p class="venue">
-        NeurIPS, 2025
+        NeurIPS 2025
         </p>
         <p class="description">
-        We speed up training-free inference in diffusion models using an approximation to Newton's method. This is the algorithm that powers <a href="#zoomldmGIF">ZoomLDM</a>. We also made a short game that uses this algorithm to generate diffusion images in real-time
+        Speeding up training-free inference with a simple approximation.
+        We made a game that uses this algorithm to generate images with constraints in real-time
         [<a href="https://www.youtube.com/watch?v=DuxqX7DBC0g" target="_blank">Gameplay 1</a> /
         <a href="https://www.youtube.com/watch?v=SlyI0Gr-qpM" target="_blank">Gameplay 2</a>].
         </p>
@@ -84,17 +158,6 @@
       </div>
     </div>
   </div>
-  <script>
-    const gif_newton = document.getElementById("newtonGIF");
-    const staticSrc_newton = gif_newton.src;
-    const animatedSrc_newton = gif_newton.getAttribute("data-animated");
-    gif_newton.addEventListener("mouseover", () => {
-        gif_newton.src = animatedSrc_newton + "?t=" + new Date().getTime();
-    });
-    gif_newton.addEventListener("mouseout", () => {
-      gif_newton.src = staticSrc_newton;
-    });
-  </script>
   <!-- NewtonDiff -->
 
   <!-- PixCell -->
@@ -103,7 +166,7 @@
       <div class="gif-container">
         <img src="content/img/pixcell.png"
              data-animated="content/img/pixcell.gif"
-             alt="GIF Toggle" id="pixcellGIF">
+             alt="PixCell samples" id="pixcellGIF">
       </div>
 
       <div class="text">
@@ -113,26 +176,15 @@
         </a>
         </p>
         <p class="authors">
-        Alexandros Graikos*,
-        S. Yellapragada*,
-        Z. Li,
-        K. Triaridis,
-        V. Belagali,
-        T. N. Nandi,
-        K. Bai,
-        B. S. Knudsen,
-        T. Kurc,
-        R. R. Gupta,
-        P. Prasanna,
-        R. K Madduri,
-        J. Saltz,
-        Dimitris Samaras
+        Alexandros Graikos*, Srikar Yellapragada*, Zilinghan Li, Kostas Triaridis, 
+        Varun Belagali, Tarak Nath Nandi, Karen Bai, Beatrice S. Knudsen, Tahsin Kurc,
+        Rajarsi R. Gupta, Prateek Prasanna, Ravi K Madduri, Joel Saltz, Dimitris Samaras
         </p>
         <p class="venue">
         Preprint
         </p>
         <p class="description">
-        The first generative foundation model for digital histopathology images. We demonstrate the ability to preserve privacy by utilizing synthetic data, and solve generative tasks such as virtual staining.
+        The first generative foundation model for digital histopathology images.
         </p>
         <div class="links">
           <a href="https://huggingface.co/StonyBrook-CVLab/PixCell-1024" target="_blank">PixCell-1024 🤗</a> /
@@ -142,17 +194,6 @@
       </div>
     </div>
   </div>
-  <script>
-    const gif_pixcell = document.getElementById("pixcellGIF");
-    const staticSrc_pixcell = gif_pixcell.src;
-    const animatedSrc_pixcell = gif_pixcell.getAttribute("data-animated");
-    gif_pixcell.addEventListener("mouseover", () => {
-        gif_pixcell.src = animatedSrc_pixcell + "?t=" + new Date().getTime();
-    });
-    gif_pixcell.addEventListener("mouseout", () => {
-      gif_pixcell.src = staticSrc_pixcell;
-    });
-  </script>
   <!-- PixCell -->
 
   <!-- ZoomLDM -->
@@ -161,7 +202,7 @@
       <div class="gif-container">
         <img src="content/img/zoomldm.png"
              data-animated="content/img/zoomldm.gif"
-             alt="GIF Toggle" id="zoomldmGIF">
+             alt="Zooming in-out" id="zoomldmGIF">
       </div>
 
       <div class="text">
@@ -171,19 +212,14 @@
         </a>
         </p>
         <p class="authors">
-        Alexandros Graikos*,
-        Srikar Yellapragada*,
-        Kostas Triaridis,
-        Prateek Prasanna,
-        Rajarsi R. Gupta,
-        Joel Saltz,
-        Dimitris Samaras
+        Alexandros Graikos*, Srikar Yellapragada*, Kostas Triaridis,
+        Prateek Prasanna, Rajarsi R. Gupta, Joel Saltz, Dimitris Samaras
         </p>
         <p class="venue">
-        CVPR, 2025
+        CVPR 2025
         </p>
         <p class="description">
-        We propose a multi-scale diffusion model to make generation of massive pathology images feasible.
+        A multi-scale diffusion model to generate very large <i>coherent</i> histopathology images.
         </p>
         <div class="links">
           <a href="https://github.com/cvlab-stonybrook/ZoomLDM" target="_blank">Code</a> /
@@ -193,17 +229,6 @@
       </div>
     </div>
   </div>
-  <script>
-    const gif_zoomldm = document.getElementById("zoomldmGIF");
-    const staticSrc_zoomldm = gif_zoomldm.src;
-    const animatedSrc_zoomldm = gif_zoomldm.getAttribute("data-animated");
-    gif_zoomldm.addEventListener("mouseover", () => {
-        gif_zoomldm.src = animatedSrc_zoomldm + "?t=" + new Date().getTime();
-    });
-    gif_zoomldm.addEventListener("mouseout", () => {
-      gif_zoomldm.src = staticSrc_zoomldm;
-    });
-  </script>
   <!-- ZoomLDM -->
 
   <!-- CVPR24 -->
@@ -212,7 +237,7 @@
       <div class="gif-container">
         <img src="content/img/cvpr24.png"
              data-animated="content/img/cvpr24.gif"
-             alt="GIF Toggle" id="cvpr24GIF">
+             alt="Examples of extrapolations" id="cvpr24GIF">
       </div>
 
       <div class="text">
@@ -222,19 +247,15 @@
         </a>
         </p>
         <p class="authors">
-        Alexandros Graikos*,
-        Srikar Yellapragada*,
-        Minh-Quan Le,
-        Saarthak Kapse,
-        Prateek Prasanna,
-        Joel Saltz,
-        Dimitris Samaras
+        Alexandros Graikos*, Srikar Yellapragada*, Minh-Quan Le, Saarthak Kapse,
+        Prateek Prasanna, Joel Saltz, Dimitris Samaras
         </p>
         <p class="venue">
-        CVPR, 2024
+        CVPR 2024
         </p>
         <p class="description">
-        We use self-supervised models to provide annotations for diffusion models in digital pathology. Exploiting the unique structure of the data, we synthesize large images with only a patch-based model.
+        Self-supervised models provide patch annotations for diffusion models.
+        We extrapolate from patches to synthesize large images. 
         </p>
         <div class="links">
           <a href="https://github.com/cvlab-stonybrook/Large-Image-Diffusion" target="_blank">Code</a> /
@@ -243,64 +264,7 @@
       </div>
     </div>
   </div>
-  <script>
-    const gif_cvpr24 = document.getElementById("cvpr24GIF");
-    const staticSrc_cvpr24 = gif_cvpr24.src;
-    const animatedSrc_cvpr24 = gif_cvpr24.getAttribute("data-animated");
-    gif_cvpr24.addEventListener("mouseover", () => {
-        gif_cvpr24.src = animatedSrc_cvpr24 + "?t=" + new Date().getTime();
-    });
-    gif_cvpr24.addEventListener("mouseout", () => {
-      gif_cvpr24.src = staticSrc_cvpr24;
-    });
-  </script>
   <!-- CVPR24 -->
-
-  <!-- Denoiser Representations -->
-  <div class="publication">
-    <div class="publication-content"> 
-      <div class="gif-container">
-        <img src="content/img/denoiserrepr.png"
-             data-animated="content/img/denoiserrepr.gif"
-             alt="GIF Toggle" id="denoiserreprGIF">
-      </div>
-
-      <div class="text">
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2306.1900" target="_blank">
-          <strong>Conditional Generation from Unconditional Diffusion Models using Denoiser Representations</strong><br>
-        </a>
-        </p>
-        <p class="authors">
-        Alexandros Graikos, 
-        Srikar Yellapragada,
-        Dimitris Samaras
-        </p>
-        <p class="venue">
-        BMVC, 2023
-        </p>
-        <p class="description">
-        We show that we can learn to control generation with as few as 20 examples using the existing denoiser representations.
-        </p>
-        <div class="links">
-          <a href="https://github.com/cvlab-stonybrook/fewshot-conditional-diffusion" target="_blank">Code</a> / 
-          <a href="https://arxiv.org/abs/2306.1900" target="_blank">arXiv</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    const gif_denoiserrepr = document.getElementById("denoiserreprGIF");
-    const staticSrc_denoiserrepr = gif_denoiserrepr.src;
-    const animatedSrc_denoiserrepr = gif_denoiserrepr.getAttribute("data-animated");
-    gif_denoiserrepr.addEventListener("mouseover", () => {
-        gif_denoiserrepr.src = animatedSrc_denoiserrepr + "?t=" + new Date().getTime();
-    });
-    gif_denoiserrepr.addEventListener("mouseout", () => {
-      gif_denoiserrepr.src = staticSrc_denoiserrepr;
-    });
-  </script>
-  <!-- Denoiser Representations -->
 
   <!-- Plug-and-play -->
   <div class="publication">
@@ -308,7 +272,7 @@
       <div class="gif-container">
         <img src="content/img/tsp_solution.png"
              data-animated="content/img/tsp_solution.gif"
-             alt="GIF Toggle" id="tspGIF">
+             alt="Solving TSP" id="tspGIF">
       </div>
 
       <div class="text">
@@ -318,16 +282,14 @@
         </a>
         </p>
         <p class="authors">
-        Alexandros Graikos, 
-        Nikolay Malkin,
-        Nebojsa Jojic,
-        Dimitris Samaras
+        Alexandros Graikos, Esmeralda S. Whitammer, Nebojsa Jojic, Dimitris Samaras
         </p>
         <p class="venue">
         NeurIPS 2022
         </p>
         <p class="description">
-        Diffusion models can be used in inference tasks without any additional training. You can even solve the traveling salesman problem with a diffusion model (left).
+        Any inference task can use a diffusion model as an image prior.
+        You can even solve the traveling salesman problem! 
         </p>
         <div class="links">
           <a href="https://github.com/AlexGraikos/diffusion_priors" target="_blank">Code</a> / 
@@ -336,116 +298,12 @@
       </div>
     </div>
   </div>
-  <script>
-    const gif_tsp = document.getElementById("tspGIF");
-    const staticSrc_tsp = gif_tsp.src;
-    const animatedSrc_tsp = gif_tsp.getAttribute("data-animated");
-    gif_tsp.addEventListener("mouseover", () => {
-      gif_tsp.src = animatedSrc_tsp + "?t=" + new Date().getTime();
-    });
-    gif_tsp.addEventListener("mouseout", () => {
-      gif_tsp.src = staticSrc_tsp;
-    });
-  </script>
   <!-- Plug-and-play -->
 
-  <!-- Food volume estimation -->
-  <div class="publication">
-    <div class="publication-content"> 
-      <div class="gif-container">
-        <img src="content/img/food_vol_est.png"
-             data-animated="content/img/food_vol_est.gif"
-             alt="GIF Toggle" id="foodGIF">
-      </div>
 
-      <div class="text">
-        <p class="papertitle">
-        <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38" target="_blank">
-          <strong>Single-Image Based Food Volume Estimation</strong><br>
-        </a>
-        </p>
-        <p class="authors">
-        Alexandros Graikos, 
-        Vasileios Charisis,
-        Dimitrios Iakovakis, 
-        Stelios Hadjidimitriou, 
-        Leontios Hadjileontiadis
-        </p>
-        <p class="venue">
-        HCI International 2020
-        </p>
-        <p class="description">
-        Training and applying monocular depth estimation models to estimate the food volume from a given RGB image.
-        </p>
-        <div class="links">
-          <a href="https://github.com/AlexGraikos/food_volume_estimation" target="_blank">Code</a> / 
-          <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38" target="_blank">Paper</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    const gif_food = document.getElementById("foodGIF");
-    const staticSrc_food = gif_food.src;
-    const animatedSrc_food = gif_food.getAttribute("data-animated");
-    gif_food.addEventListener("mouseover", () => {
-      gif_food.src = animatedSrc_food + "?t=" + new Date().getTime();
-    });
-    gif_food.addEventListener("mouseout", () => {
-      gif_food.src = staticSrc_food;
-    });
-  </script>
-  <!-- Food volume estimation -->
-
-  <!-- Monodepth -->
-  <div class="publication">
-    <div class="publication-content"> 
-      <div class="gif-container">
-        <img src="content/img/monocular_depth_estimation.png"
-             data-animated="content/img/monocular_depth_estimation.gif"
-             alt="GIF Toggle" id="monodepthGIF">
-      </div>
-
-      <div class="text">
-        <p class="papertitle">
-        <a href="https://github.com/AlexGraikos/adversarial_depth_estimation" target="_blank">
-        <strong>Monocular Depth Estimation using Generative Adversarial Networks</strong><br>
-        </a>
-        </p>
-        <p class="authors">
-        Alexandros Graikos,
-        Anastasios Delopoulos
-        </p>
-        <p class="venue">
-        Undergraduate Thesis, 2018
-        </p>
-        <p class="description">
-        Adding GAN losses to monocular depth estimation models improves predicted depth accuracy.
-        </p>
-        <div class="links">
-          <a href="https://github.com/AlexGraikos/adversarial_depth_estimation" target="_blank">Code</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    const gif_monodepth = document.getElementById("monodepthGIF");
-    const staticSrc_monodepth = gif_monodepth.src;
-    const animatedSrc_monodepth = gif_monodepth.getAttribute("data-animated");
-    gif_monodepth.addEventListener("mouseover", () => {
-      gif_monodepth.src = animatedSrc_monodepth + "?t=" + new Date().getTime();
-    });
-    gif_monodepth.addEventListener("mouseout", () => {
-      gif_monodepth.src = staticSrc_monodepth;
-    });
-  </script>
-  <!-- Monodepth -->
-
-
-  <!-- Listing all papers here -->
-
+  <!-- Listing recent papers here -->
   <div class="header-panel">
-    <h1 class="header">Publications</h1>
+    <h1 class="header">Recent Publications</h1>
   </div>
 
   <div class="publication">
@@ -454,6 +312,38 @@
         <tr>
             <strong><u>2026</u></strong>
         </tr>
+
+        <!--
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/" target="_blank">
+            <strong>On the spectral properties of generative denoiser Jacobians</strong><br>
+        </a>
+        </p>
+        <p>
+        <u>Alexandros Graikos</u>, Nebojsa Jojic, Dimitris Samaras,
+        <br>
+        Preprint<br>
+        </p>
+        </tr>
+        -->
+
+        <!--
+        <tr>
+        <p class="papertitle">
+        <a href="https://arxiv.org/" target="_blank">
+            <strong>BigCell: Generating Gigapixel Whole-Slide Images</strong><br>
+        </a>
+        </p>
+        <p>
+        Srikar Yellapragada, <u>Alexandros Graikos</u>, Zilinghan Li, Kostas Triaridis,
+        Tarak Nath Nandi, Ji Dong K Bai, Beatrice Knudsen, Tahsin Kurc, Prateek Prasanna,
+        Rajarsi R. Gupta, Ravi K Madduri, Joel Saltz, Dimitris Samaras
+        <br>
+        NeurIPS 2026<br>
+        </p>
+        </tr>
+        -->
 
         <tr>
         <p class="papertitle">
@@ -464,7 +354,7 @@
         <p>
         Ritik Raina, Abe Leite, <u>Alexandros Graikos</u>, Seoyoung Ahn, Gregory J Zelinsky
         <br>
-        <i>CCN 2026</i><br>
+        CCN 2026<br>
         </p>
         </tr>
 
@@ -477,41 +367,7 @@
         <p>
         Irene Kim, Sai Tanmay Reddy Chakkera, <u>Alexandros Graikos</u>, Dimitris Samaras, Akshat Dave
         <br>
-        <i>ECCV 2026</i><br>
-        </p>
-        </tr>
-
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://openreview.net/forum?id=ZtX3pV4za2&" target="_blank">
-            <strong>Structured image representation learning for flow-matching models</strong><br>
-        </a>
-        </p>
-        <p>
-        <u>Alexandros Graikos</u>, 
-        Kostas Triaridis,
-        Nikolay Malkin,
-        Dimitris Samaras
-        <br>
-        <i>ICLR 2026 2nd Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://snehalstomar.github.io/projects/gridit_project/index.html" target="_blank">
-            <strong>GriDiT: Factorized Grid-Based Diffusion for Efficient Long Image Sequence Generation</strong><br>
-        </a>
-        </p>
-        <p>
-        Snehal Singh Tomar,
-        <u>Alexandros Graikos</u>, 
-        Arjun Krishna,
-        Dimitris Samaras,
-        Klaus Mueller
-        <br>
-        <i>TMLR 2026</i><br>
+        ECCV 2026 · <b>Best paper honorable mention</b><br>
         </p>
         </tr>
 
@@ -522,18 +378,37 @@
         </a>
         </p>
         <p>
-        Varun Belagali*,
-        Srikar Yellapragada*,
-        <u>Alexandros Graikos</u>, 
-        Saarthak Kapse,
-        Zilinghan Li,
-        Tarak Nath Nandi,
-        Ravi K Madduri,
-        Prateek Prasanna,
-        Joel Saltz,
-        Dimitris Samaras
+        Varun Belagali*, Srikar Yellapragada*, <u>Alexandros Graikos</u>, 
+        Saarthak Kapse, Zilinghan Li, Tarak Nath Nandi, Ravi K Madduri,
+        Prateek Prasanna, Joel Saltz, Dimitris Samaras
         <br>
-        <i>DataCV Workshop @ CVPR 2026</i><br>
+        DataCV Workshop @ CVPR 2026 · <b>Best paper award</b><br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://snehalstomar.github.io/projects/gridit_project/index.html" target="_blank">
+            <strong>GriDiT: Factorized Grid-Based Diffusion for Efficient Long Image Sequence Generation</strong><br>
+        </a>
+        </p>
+        <p>
+        Snehal Singh Tomar, <u>Alexandros Graikos</u>,  Arjun Krishna, Dimitris Samaras, Klaus Mueller
+        <br>
+        TMLR 2026<br>
+        </p>
+        </tr>
+
+        <tr>
+        <p class="papertitle">
+        <a href="https://openreview.net/forum?id=ZtX3pV4za2&" target="_blank">
+            <strong>Structured image representation learning for flow-matching models</strong><br>
+        </a>
+        </p>
+        <p>
+        <u>Alexandros Graikos</u>,  Kostas Triaridis, Esmeralda S. Whitammer, Dimitris Samaras
+        <br>
+        ICLR 2026 2nd Workshop on Deep Generative Model in Machine Learning: Theory, Principle and Efficacy<br>
         </p>
         </tr>
 
@@ -544,14 +419,10 @@
         </a>
         </p>
         <p>
-        Ritik Raina,
-        Abe Leite,
-        <u>Alexandros Graikos</u>,
-        Seoyoung Ahn,
-        Dimitris Samaras,
-        Greg Zelinsky
+        Ritik Raina, Abe Leite, <u>Alexandros Graikos</u>, Seoyoung Ahn,
+        Dimitris Samaras, Greg Zelinsky
         <br>
-        <i>ICLR 2026</i><br>
+        ICLR 2026<br>
         </p>
         </tr>
         
@@ -567,11 +438,9 @@
         </a>
         </p>
         <p>
-        <u>Alexandros Graikos</u>,
-        Nebojsa Jojic,
-        Dimitris Samaras
+        <u>Alexandros Graikos</u>, Nebojsa Jojic, Dimitris Samaras
         <br>
-        <i>NeurIPS 2025</i><br>
+        NeurIPS 2025<br>
         </p>
         </tr>
 
@@ -582,9 +451,11 @@
         </a>
         </p>
         <p>
-        <u>Alexandros Graikos</u>*, S. Yellapragada*, Z. Li, K. Triaridis, V. Belagali, T. N. Nandi, K. Bai, B. S. Knudsen, T. Kurc, R. R. Gupta, P. Prasanna, R. K Madduri, J. Saltz, Dimitris Samaras
+        Srikar Yellapragada*, <u>Alexandros Graikos</u>*, Zilinghan Li, Kostas Triaridis, 
+        Varun Belagali, Tarak Nath Nandi, Karen Bai, Beatrice S. Knudsen, Tahsin Kurc,
+        Rajarsi R. Gupta, Prateek Prasanna, Ravi K Madduri, Joel Saltz, Dimitris Samaras
         <br>
-        <i>Preprint</i><br>
+        Preprint<br>
         </p>
         </tr>
 
@@ -595,17 +466,10 @@
         </a>
         </p>
         <p>
-        Srikar Yellapragada,
-        <u>Alexandros Graikos</u>,
-        Kostas Triaridis,
-        Zilinghan Li,
-        Tarak Nath Nandi,
-        Ravi K Madduri,
-        Prateek Prasanna,
-        Joel Saltz,
-        Dimitris Samaras
+        Srikar Yellapragada, <u>Alexandros Graikos</u>, Kostas Triaridis, Zilinghan Li, Tarak Nath Nandi,
+        Ravi K Madduri, Prateek Prasanna, Joel Saltz, Dimitris Samaras
         <br>
-        <i>MICCAI 2025</i><br>
+        MICCAI 2025<br>
         </p>
         </tr>
 
@@ -616,12 +480,9 @@
         </a>
         </p>
         <p>
-        Sachin Kumar Danisetty,
-        <u>Alexandros Graikos</u>, 
-        Srikar Yellapragada,
-        Dimitris Samaras
+        Sachin Kumar Danisetty, <u>Alexandros Graikos</u>, Srikar Yellapragada, Dimitris Samaras
         <br>
-        <i>5th Deep Generative Models Workshop @ MICCAI 2025</i><br>
+        5th Deep Generative Models Workshop @ MICCAI 2025<br>
         </p>
         </tr>
 
@@ -633,13 +494,9 @@
         </a>
         </p>
         <p>
-        Ritik Raina,
-        Abe Leite,
-        <u>Alexandros Graikos</u>, 
-        Seoyoung Ahn,
-        Greg Zelinsky
+        Ritik Raina, Abe Leite, <u>Alexandros Graikos</u>, Seoyoung Ahn, Greg Zelinsky
         <br>
-        <i>CCN 2025</i><br>
+        CCN 2025<br>
         </p>
         </tr>
 
@@ -650,210 +507,30 @@
         </a>
         </p>
         <p>
-        <u>Alexandros Graikos</u>*,
-        Srikar Yellapragada*,
-        Kostas Triaridis,
-        Prateek Prasanna,
-        Rajarsi R. Gupta,
-        Joel Saltz,
-        Dimitris Samaras
+        <u>Alexandros Graikos</u>*, Srikar Yellapragada*, Kostas Triaridis,
+        Prateek Prasanna, Rajarsi R. Gupta, Joel Saltz, Dimitris Samaras
         <br>
-        <i>CVPR 2025</i><br>
+        CVPR 2025<br>
         </p>
         </tr>
 
-        <tr>
-            <strong><u>2024</u></strong>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2407.14709" target="_blank">
-          <strong>∞-Brush: Controllable Large Image Synthesis with Diffusion Models in Infinite Dimensions</strong><br>
-        </a>
-        </p>
-        <p>
-        Minh-Quan Le*,
-        <u>Alexandros Graikos</u>*, 
-        Srikar Yellapragada,
-        Rajarsi Gupta, 
-        Joel Saltz,
-        Dimitris Samaras
-        <br>
-        <i>ECCV 2024</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2406.02774" target="_blank">
-          <strong>Diffusion-Refined VQA Annotations for Semi-Supervised Gaze Following</strong><br>
-        </a>
-        </p>
-        <p>
-        Qiaomu Miao,
-        <u>Alexandros Graikos</u>, 
-        Jingwei Zhang,
-        Sounak Mondal,
-        Minh Hoai,
-        Dimitris Samaras
-        <br>
-        <i>ECCV 2024</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2312.07330" target="_blank">
-          <strong>Learned representation-guided diffusion models for large-image generation</strong><br>
-        </a>
-        </p>
-        <p>
-        <u>Alexandros Graikos</u>*, 
-        Srikar Yellapragada*,
-        Minh-Quan Le,
-        Saarthak Kapse,
-        Prateek Prasanna,
-        Joel Saltz,
-        Dimitris Samaras
-        <br>
-        <i>CVPR 2024</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2309.00748" target="_blank">
-          <strong>PathLDM: Text conditioned Latent Diffusion Model for Histopathology</strong><br>
-        </a>
-        </p>
-        <p>
-        Srikar Yellapragada*,
-        <u>Alexandros Graikos</u>*, 
-        Prateek Prasanna,
-        Tahsin Kurc,
-        Joel Saltz,
-        Dimitris Samaras
-        <br>
-        <i>WACV 2024</i><br>
-        </p>
-        </tr>
-
-        <tr>
-            <strong><u>2023</u></strong>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2306.1900" target="_blank">
-          <strong>Conditional Generation from Unconditional Diffusion Models using Denoiser Representations</strong><br>
-        </a>
-        </p>
-        <p>
-        <u>Alexandros Graikos</u>, 
-        Srikar Yellapragada,
-        Dimitris Samaras
-        <br>
-        <i>BMVC 2023</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2303.17712" target="_blank">
-          <strong>S-volsdf: Sparse multi-view stereo regularization of neural implicit surfaces</strong><br>
-        </a>
-        </p>
-        <p>
-        Haoyu Wu,
-        <u>Alexandros Graikos</u>,
-        Dimitris Samaras
-        <br>
-        <i>ICCV 2023</i><br>
-        </p>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2302.06576" target="_blank">
-          <strong>GFlowNet-EM for learning compositional latent variable models</strong><br>
-        </a>
-        </p>
-        <p>
-        Edward Hu,
-        Nikolay Malkin,
-        Moksh Jain, 
-        Katie Everett,
-        <u>Alexandros Graikos</u>, 
-        Yoshua Bengio
-        <br>
-        <i>ICML 2023</i><br>
-        </p>
-        </tr>
-
-        <tr>
-            <strong><u>2022</u></strong>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2206.09012" target="_blank">
-          <strong>Diffusion models as plug-and-play priors</strong><br>
-        </a>
-        </p>
-        <p>
-        <u>Alexandros Graikos</u>, 
-        Nikolay Malkin,
-        Nebojsa Jojic,
-        Dimitris Samaras
-        <br>
-        <i>NeurIPS 2022</i><br>
-        </p>
-        </tr>
-
-        <table>
-        <tr>
-        <p class="papertitle">
-        <a href="https://arxiv.org/abs/2202.14000" target="_blank">
-          <strong>Resolving label uncertainty with implicit generative models</strong><br>
-        </a>
-        </p>
-        <p>
-        Esther Rolf,
-        Nikolay Malkin,
-        <u>Alexandros Graikos</u>,
-        Ana Jojic,
-        Caleb Robinson,
-        Nebojsa Jojic
-        <br>
-        <i>UAI 2022</i><br>
-        </p>
-        </tr>
-
-        <tr>
-            <strong><u>2020</u></strong>
-        </tr>
-
-        <tr>
-        <p class="papertitle">
-        <a href="https://link.springer.com/chapter/10.1007/978-3-030-49108-6_38" target="_blank">
-          <strong>Single-Image Based Food Volume Estimation</strong><br>
-        </a>
-        </p>
-        <p>
-        <u>Alexandros Graikos</u>, 
-        Vasileios Charisis,
-        Dimitrios Iakovakis, 
-        Stelios Hadjidimitriou, 
-        Leontios Hadjileontiadis
-        <br>
-        <i>HCI International 2020</i><br>
-        </p>
-        </tr>
       </div>
     </div>
   </div>
 
+<!-- Hover over images for animation -->
+<script>
+  document.querySelectorAll('.gif-container img[data-animated]').forEach(img => {
+    const still = img.src;
+    const animated = img.getAttribute('data-animated');
+    img.addEventListener('mouseover', () => {
+      img.src = animated + '?t=' + Date.now();
+    });
+    img.addEventListener('mouseout', () => {
+      img.src = still;
+    });
+  });
+</script>
+
 </body>
 </html>
-

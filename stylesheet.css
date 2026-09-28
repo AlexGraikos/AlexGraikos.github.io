@@ -105,9 +105,11 @@ a:hover {
 }
 .publication p.authors {
   margin: 0 0 2px;
+  color: #111;
+  font-size: 14px;
 }
 .publication p.venue {
-  font-style: italic;
+  font-weight: bold;
   margin: 0 0 2px;
 }
 .publication p.description {
@@ -143,4 +145,3 @@ a:hover {
   margin-right: 20px;
   display: block;
 }
-
