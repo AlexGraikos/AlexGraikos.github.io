@@ -72,7 +72,7 @@ main h2 { font-size: 1.65rem; line-height: 1.25; font-weight: normal; margin: 0 
 .papertitle { margin: 0 0 .42rem; font-size: 1.16rem; font-weight: normal; line-height: 1.35; text-decoration: none; }
 .papertitle a { color: var(--accent); }
 .research-paper .papertitle { margin-bottom: .35rem; }
-.authors, .venue { font-size: .83rem; line-height: 1.5; margin: 0; color: var(--muted); }
+.authors, .venue { font-size: .83rem; line-height: 1.0; margin: 0; color: var(--muted); }
 .research-paper .authors { font-size: .8rem; line-height: 1.4; }
 .venue { font-style: italic; margin-top: .15rem; }
 .research-paper .venue { margin-top: .2rem; }
